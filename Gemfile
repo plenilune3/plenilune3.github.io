@@ -15,4 +15,5 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
   gem "jekyll-include-cache"
   gem "jekyll-redirect-from"
+  gem "minimal-mistakes-jekyll"
 end
