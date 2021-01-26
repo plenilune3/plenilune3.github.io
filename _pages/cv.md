@@ -9,32 +9,34 @@ redirect_from:
     - /resume/
 ---
 
-## 👨🏻‍🎓Education
+## ⚡Skills
 
-* B.Eng. in Korea, Jeju National University, 2020
+* **Back-end** Spring framework, Java
+* **Others** Git & Github
+
+## Projects
+
+* .....
 
 ## 👨🏻‍💻Work experience
 
-* SW Internship program (2019. 6. 26 - 2019. 8. 25)
-  * Korea Institute of Science and Technology Information (KISTI)  
-  * 
+* **Korea Institute of Science and Technology Information**, in Deajon (2019. 6. 26 - 2019. 8. 25)
+  * Analyzed AI-based Computational Science data
+  * Developed Simulation prediction S/W and collecting users' data
 
-* Research Assistant
+* **Network Convergence Lab**, in Jeju (2018. 9. 1 - 2019. 6. 30)
   * Jeju National University, Network Convergence Lab
-  * 
+  * Participated in Industry-University Cooperation project
+
+## 👨🏻‍🎓Education
+
+* B.Eng. in Korea, Jeju National University, 2020
 
 ## 📖Certifications
 
 * TOEIC Speacking: Level 6
 * Engineer Information Processing
 
-## Skills
-
-* Java, Spring
-* C++, Python
-
-## Portfolio
+## 📁Portfolio
   
-  <ul> {% for post in site.portfolio %}
-      {% include archive-single-cv.html %}
-    {% endfor %} </ul>
+  <ul> {% for post in site.portfolio reversed %} {% include archive-single-cv.html %} {% endfor %} </ul>

@@ -10,3 +10,6 @@ redirect_from:
     - /about.html
 ---
 
+Hello! I'm Mingyu Kang.
+I'm a server developer who just got out of college.
+My interests are in the server develoment with the Spring framework and kubernetes.
