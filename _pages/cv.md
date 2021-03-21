@@ -14,7 +14,7 @@ redirect_from:
 * **Back-end** Spring framework, Java
 * **Others** Git & Github
 
-## Projects
+## 🌎Projects
 
 * .....
 

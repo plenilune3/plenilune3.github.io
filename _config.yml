@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US"
 title                    : "Mingyu Kang / "
 title_separator          : "-"
-subtitle                 : "David" # site tagline that appears below site title in masthead
+subtitle                 : "mkang" # site tagline that appears below site title in masthead
 name                     : "Mingyu Kang"
 description              : "An amazing website."
 url                      : "https://plenilune3.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Mingyu Kang"
-  avatar           : "/assets/images/profile.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "SW Developer"
   location         : "Somewhere"
   email            :
