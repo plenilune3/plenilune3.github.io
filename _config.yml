@@ -308,6 +308,7 @@ defaults:
     values:
       layout: single
       author_profile: false
+      read_time: true
       share: true
   
   #_talk
