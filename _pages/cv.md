@@ -1,18 +1,23 @@
 ---
 title: "CV"
 permalink: /cv/
+redirect_from:
+    - /resume/
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/cv/overlay-image.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "Curriculum Vitae"
 author_profile: true
 toc: true
 toc_sticky: true 
-
-redirect_from:
-    - /resume/
 ---
 
 ## ⚡Skills
 
 * **Back-end** Spring framework, Java
-* **Others** Git & Github
+* **Others** Git & Github, Vim
 
 ## 🌎Projects
 
