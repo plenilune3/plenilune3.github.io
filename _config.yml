@@ -42,7 +42,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : "github-dark" # "github-light" (default), "github-dark"
-    issue_term           : "url" # "pathname" (default)
+    issue_term           : "pathname" # "pathname" (default)
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
@@ -275,9 +275,9 @@ collections:
     output: true
     permalink: /:collection/:path/
     reversed: true
-  posts:
-    output: true
-    permalink: /:collection/:path/
+  # posts:
+  #   output: true
+  #   permalink: /:collection/:path/
   talk:
     output: true
     permalink: /:collection/:path/
@@ -292,7 +292,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
       share: true
       related: true
 
