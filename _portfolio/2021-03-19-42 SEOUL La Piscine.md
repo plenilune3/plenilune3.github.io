@@ -1,7 +1,6 @@
 ---
 title: "42 SEOUL La Piscine"
 excerpt: "Project based learning and peer evaluation"
-# collection: portfolio
 date: 2021-03-19
 
 header:

@@ -1,8 +1,7 @@
 ---
 title: "2019 1st ML month with KaKR"
 excerpt: "Titanic: Machine Learning from Disaster"
-collection: portfolio
-# date: 2019-03-02
+date: 2019-03-02
 
 header:
   overlay_image: /assets/images/2019_1st_ML_month_with_KaKR/identity.jpg

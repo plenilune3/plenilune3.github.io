@@ -1,24 +1,27 @@
 ---
 title: "About me"
+excerpt: "Junior SW Developer"
+layout: splash
 permalink: /
 redirect_from:
     - /about-me/
     - /about-me.html
-layout: splash
+
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/about-me/unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "Junior SW Developer"
+
 intro:
-  - excerpt: ""
+  - excerpt: "이 페이지는 현재 **공사중** 입니다. 최대한 빠른 시일내에 완성하겠습니다!"
+
 feature_row:
-  - image_path: assets/images/42SEOUL_La_Piscine/identity.png
+  - image_path: assets/images/42SEOUL_La_Piscine/profile.jpeg
     alt: "placeholder image 1"
     title: "42 SEOUL La Piscine"
     excerpt: "Project based learning and peer evaluation"
-    url: "/portfolio/5"
+    url: "/portfolio/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/2019_Summer_season_KISTI_Internship_program/identity.jpg
@@ -37,7 +40,7 @@ feature_row:
 ---
 
 {% include feature_row id="intro" type="center" %}
-{% include feature_row id="feature_row" %}
+{% include feature_row id=site.portfolio limit=3 %}
 
 ## 📎Introduce
 
