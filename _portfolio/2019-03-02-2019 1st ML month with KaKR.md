@@ -1,11 +1,14 @@
 ---
 title: "2019 1st ML month with KaKR"
 excerpt: "Titanic: Machine Learning from Disaster"
-header:
-  image: /assets/images/2019_1st_ML_month_with_KaKR/identity.jpg
-  teaser: /assets/images/2019_1st_ML_month_with_KaKR/identity.jpg
 collection: portfolio
-date: 2019-01-28
+# date: 2019-03-02
+
+header:
+  overlay_image: /assets/images/2019_1st_ML_month_with_KaKR/identity.jpg
+  overlay_filter:  0.5
+  teaser: /assets/images/2019_1st_ML_month_with_KaKR/identity.jpg
+
 sidebar:
   - title: "Role"
     image: /assets/images/2019_1st_ML_month_with_KaKR/profile.png
@@ -13,6 +16,7 @@ sidebar:
     text: "Team leader, Speaker"
   - title: "Responsibilities"
     text: "Data preprocessing, Feature engineering"
+
 gallery:
   - url: /assets/images/2019_1st_ML_month_with_KaKR/image-1.jpg
     image_path: assets/images/2019_1st_ML_month_with_KaKR/image-1.jpg
@@ -24,6 +28,20 @@ gallery:
     image_path: assets/images/2019_1st_ML_month_with_KaKR/image-3.jpg
     alt: "placeholder image 3"
 ---
+
+## 🎯Summary
+
+## 📚Introduction
+
+## 🙏What have you expected?
+
+## ⚡What have you learned?
+
+## ⭐What is Next?
+
+## 🌏Reference
+
+ - 
 
 
 

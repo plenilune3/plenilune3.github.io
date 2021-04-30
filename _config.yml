@@ -290,8 +290,11 @@ defaults:
       type: posts
     values:
       layout: single
+      permalink: /posts/:categories/:slug
       author_profile: true
       read_time: true
+      toc: true
+      toc_sticky: true
       comments: true
       share: true
       related: true
@@ -310,7 +313,10 @@ defaults:
       type: portfolio
     values:
       layout: single
+      permalink: /:collection/:slug
       author_profile: false
+      toc: true
+      toc_sticky: true
       comments: true
       read_time: true
       share: true
