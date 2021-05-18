@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Mingyu Kang"
-  avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile_42.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "SW Developer"
   location         : "Somewhere"
   email            :
