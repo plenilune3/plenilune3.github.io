@@ -39,10 +39,13 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
+
 {% include feature_row id="intro" type="center" %}
 {% include feature_row id=site.portfolio limit=3 %}
 
 ## 📎Introduce
+
+[![mkang's 42 stats](https://badge42.herokuapp.com/api/stats/mkang?privacyName=true)](https://github.com/plenilune3)
 
 Hello! I'm Mingyu Kang.
 I'm a server developer who just got out of college.
