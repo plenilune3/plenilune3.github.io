@@ -45,7 +45,7 @@ feature_row:
 
 ## 📎Introduce
 
-[![mkang's 42 stats](https://badge42.herokuapp.com/api/stats/mkang?privacyName=true)](https://github.com/plenilune3)
+[![mkang's 42 stats](https://badge42.herokuapp.com/api/stats/mkang)](https://github.com/plenilune3)
 
 Hello! I'm Mingyu Kang.
 I'm a server developer who just got out of college.

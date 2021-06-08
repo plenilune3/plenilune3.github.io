@@ -51,13 +51,25 @@ Debian은 GNU/Linux 배포판입니다.
 
 ## Why choose Debian?
 
+1. Debian is Stable and Depenable.
+2. You can use each version for a long time.
+3. Debian is ideal for server.
+4. A rolling release option is available.
+5. Debian supports many PC architecture.
+6. Debian has great software support.
+8. You want to be close to the source.
+9. You can install a free software only version.
+10. Few Linux distros have lived as long ad debian.
+11. You don't need a strong internet connection.
+12. Debian is desktop agnostic.
+
 [TEST](https://www.makeuseof.com/tag/reasons-choose-debian-linux/)
 
 ## What have you learnd?
 
 ### LVM
 
-> Logical Volume을 효율적이고 유연하게 관리하기 위한 커널의 한 부분이자 프로그램.
+> LVM, Logical Volume Manger는 Logical Volume을 효율적이고 유연하게 관리하기 위한 커널의 한 부분이자 프로그램이다.
 
 > 디스크나 대용량 스토리지 장치를 유연하고 확장이 가능하게 다룰 수 있는 기술이며 이를 커널에 구현한 기술을 LVM이라고 한다.
 
@@ -97,13 +109,13 @@ CLI로 명령을 입력하면 패키지 설치, 삭제 그리고 변경을 손�
 
 ### AppArmor and UFW
 
-> AppArmor는 시스템 관리자가 프로그램 프로필 별로 프로그램의 역량을 제한할 수 있게 해주는 
+> `AppArmor`는 시스템 관리자가 프로그램 프로필 별로 프로그램의 역량을 제한할 수 있게 해주는 
 리눅스 커널 보안 모듈이다.
 
-> UFW(Uncomplicated Firewall)는 데비안 계열 및 다양한 리눅스 환경에서 사용하는 
+> `UFW`(Uncomplicated Firewall)는 데비안 계열 및 다양한 리눅스 환경에서 사용하는 
 방화벽 관리 프로그램이다.
 
-AppArmor는 기본적으로 활성화, UFW는 설치 후 활성화해야 합니다.
+`AppArmor`는 기본적으로 활성화, `UFW`는 설치 후 활성화해야 합니다.
 두 프로그램 모두 관리자 권한이 필요합니다.
 
 ```shell
@@ -118,14 +130,14 @@ sudo ufw status
 
 ### SSH
 
-> SSH(Secure Shell)은 네트워크 상의 다른 컴퓨터에 로그인하거나 
+> `SSH`(Secure Shell)은 네트워크 상의 다른 컴퓨터에 로그인하거나 
 원격 시스템에서 명령을 실행하고 다른 시스템으로 파일을 복사할 수 있게 해주는 
 응용 프로그램 또는 그 프로토콜 입니다.
 
 데비안을 가상머신에 성공적으로 설치한 후, SSH를 통해 접속했습니다.
 보안을 위해 22번 포트가 아닌 다른 포트를 사용했습니다.
 
-UFW에서 포트를 열어 외부에서 접속할 수 있게 했습니다.
+`UFW`에서 포트를 열어 외부에서 접속할 수 있게 했습니다.
 가상머신에 접속하기 위해서 포트포워딩을 사용했습니다.
 
 ```shell
@@ -199,6 +211,35 @@ chage -l {user}
 - enforce_for_root
 
 ### Configuration for sudo group
+
+sudo를 사용하기 위해서는 설치해야 합니다.
+그리고 sudo를 사용하는 계정이 sudo 그룹에 속해 있어야 합니다.
+
+```shell
+# 최고 관리자 계정
+apt install sudo
+usermod -aG sudo {user}
+```
+
+관리자(sudo) 그룹 또한 강력한 정책을 만들었습니다.
+
+- sudo를 사용한 인증은 비밀번호를 잘못 입력했을 경우 시도를 3회로 제한합니다.
+- sudo를 사용할 때 비밀번호를 잘못 입력하여 오류가 발생하면 사용자 지정 메세지를 표시합니다.
+- sudo를 사용한 각 작업은 입력과 출력 모두를 저장해야 합니다. 로그 파일의 경로는 /var/log/sudo/ 폴더입니다.
+- 보안상의 이유로 `TTY` 모드가 켜져있어야 합니다.
+- 마찬가지 보안상의 이유로 sudo에서 사용할 수 있는 경로를 제한합니다.
+
+```shell
+# 최고 관리자 계정
+visudo
+
+# 편집기에서 아래의 내용 추가
+Defaluts  passwd_tries=3
+Defaults  badpass_message="user custom message."
+Defaults  logfile="/var/log/sudo/sudo.log"
+Defaults  requiretty
+Defaults  secure_path="..."
+```
 
 ### Monitoring
 
